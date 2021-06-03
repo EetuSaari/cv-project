@@ -217,7 +217,7 @@ header img{
 }
 /*Front page adjusting end*/
 
-/* Media Queries
+/* Media Queries not working properly
 @media screen and (max-width: 768px) {
   .f_page_flex {
     flex-direction: column;
