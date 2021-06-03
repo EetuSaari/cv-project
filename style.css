@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+                /*MUUTOKSIA TÄSSÄ! 1.6.2021*/
+      /*THIS SECTION IS FOR WRAPPING ALL THE CONTENT ON THE PAGE!*/
+#page-container { /*This box goes around everything inside body, except header*/
+  position: relative;                
+  min-height: 100vh; /*vh - stands for viewheight*/
+}
+
+/*This box is inside page-container box*/
+#content-wrap { /*This is bottom padding that is the height of the footer*/
+  /*There is no need to adjust atm*/
+}
+
+footer {
+    color: #fff;
+    padding:15px;
+    text-align: center;
+    display: block;
+
+}
+
+div#footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+}
+        /*CONTENT WRAPPING END*/
+
+h1, h2 {
+  color: #edf0f1;
+}
+
+h2 {
+
+}
+
+li, a{
+  font-size: 16px;
+  /*margin-top: 20px; Disabled 1.6.2021*/
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header{ /*MUUTOKSIA TÄSSÄ! 1.6.2021*/
+  /*float: left;*/ /*If enabled, header dosen't take full space of the X - axel*/
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+ 
+.nav_links {
+  list-style: none;
+  float: left;
+  width: 70%;
+
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  float: right;
+  width: 10%;
+  /*margin-top: 20px; Disabled 1.6.2021*/
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 8px; /*Added 1.6.2021*/
+}
+
+.button:hover {
+  background-color: rgba(255, 56, 155, 0.8);
+}
+
+.nav_links .static {
+  color: orange;
+}
+
+
+.static {
+  color: orange;
+}
+
+.contactbutton {
+  background-color: rgba(255, 56, 155, 0.8);
+}
+
+.intro{
+  padding: 30px 10%; /*These aren't necessary, because this forcing text position. Find better solution?*/
+}
+
+/* Sidebar */
+aside#sidebar{
+  width:50%;
+  margin-top:10px;
+  padding: 30px 10%;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  background-color: #fff;
+  width:90%;
+  padding:5px;
+}
+
+.dark{
+  padding:15px;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.button_1{
+  height:38px;
+  background:#0088a9;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+/* End */
+
+.cont1 {
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.projects_img img {
+  margin-top: 30px;
+  width: 900px;
+  height: 600px
+}
+
+.projects_img {
+  padding: 30px 10%;
+}
+
+.projects_img img{
+  display: flex;
+  justify-content: center;
+}
+
+.work {
+  color: #fff;
+  padding: 30px 10%;
+}
+
+
+header img{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  float: none;
+}
+
+  /*MUOKATTU 1.6.2021*/
+/*For some reason, nav-box size was 0 and we have to manually give it to size 50px?*/
+#nav-box{
+  height: 50px;
+}
+
