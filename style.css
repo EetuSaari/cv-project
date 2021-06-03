@@ -14,6 +14,8 @@
 #page-container { /*This box goes around everything inside body, except header*/
   position: relative;                
   min-height: 100vh; /*vh - stands for viewheight*/
+  
+
 }
 
 /*This box is inside page-container box*/
@@ -36,7 +38,7 @@ div#footer{
 }
         /*CONTENT WRAPPING END*/
 
-h1, h2 {
+h1, h2, p {
   color: #edf0f1;
 }
 
@@ -117,10 +119,11 @@ header{ /*MUUTOKSIA TÄSSÄ! 1.6.2021*/
 }
 
 /* Sidebar */
+/*These are the "contact me" form adjustments*/
 aside#sidebar{
   width:50%;
-  margin-top:10px;
-  padding: 30px 10%;
+  /*margin-top:10px; Disabled 2.6.2021 - Do not do anything??*/
+  /*padding: 30px; Adjusted/disabled 2.6.2021*/
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
@@ -130,7 +133,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 }
 
 .dark{
-  padding:15px;
+  /*padding:15px; Disabled 2.6.2021*/
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
@@ -143,8 +146,9 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   padding-left: 20px;
   padding-right:20px;
   color:#ffffff;
+  margin-top: 10px;
 }
-/* End */
+/* Sidebar End */
 
 .cont1 {
   padding: 10px;
@@ -186,3 +190,37 @@ header img{
   height: 50px;
 }
 
+/*Adjustin the pages "headline" content*/ /*Changes 2.6.2021*/
+.headline { /*Added 2.6.2021*/
+  margin-top: 50px; /*This gives space between nawbar and where content starts*/
+  margin-left: 20px; /*This gives space between content and left wall*/
+  margin-right: 8px; /*This adjust spave between content and right wall*/
+}
+
+/*front page image and paragrah box content adjustment*/
+.f_page_flex {
+ margin-top: 30px;
+ margin-left: 20px;
+ margin-right: 8px;
+ display: flex; /*Shows pictures and paragraphs in row by default*/
+ gap: 1em;
+ /*flex-direction: row; DONT USE BEFORE MEDIA QUERIES ARE PROPERLY SET */
+
+}
+
+/*Front page paragraphs adjustment*/
+.f_page_flex p {
+  width: 20%;
+  /*margin-left: 20px; this has been re-adjusted from f_page_flex -> 1em*/
+  text-align: center;
+
+}
+/*Front page adjusting end*/
+
+/* Media Queries
+@media screen and (max-width: 768px) {
+  .f_page_flex {
+    flex-direction: column;
+  }
+}
+*/
